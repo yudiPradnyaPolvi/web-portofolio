@@ -1,0 +1,41 @@
+@import '../../index.scss';
+
+.container{
+    @extend .flex-col;
+    padding-top: 80px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+
+.contentContainer{
+    @extend .flex-row;
+    gap: 30px;
+    padding: 20px 80px 30px 150px;
+}
+.content{
+    text-align: justify;
+    padding-right:  80px;
+}
+@media screen and (min-width: 1024px) {
+    .experience {
+      padding: 90px 250px;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .experience {
+      padding: 90px 400px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .experience {
+      padding: 90px 30px;
+    }
+  }
+  
